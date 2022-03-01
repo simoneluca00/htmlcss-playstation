@@ -88,7 +88,9 @@ section#sz-hero h1 {
 
 /* ANCHOR SEZIONE GAMES */
 div.img-games,
-div.img-games > img {
+div.img-games > img,
+div.img-new-rel > div,
+div.img-new-rel img {
     border-radius: 10px;
 }
 
@@ -116,4 +118,9 @@ div.row.img-console > div:hover {
 section#sz-hero-2 {
     background-image: url('./../img/it-takes-two-hero-banner-desktop.jpg');
     background-position: center;
+}
+
+/* ANCHOR SEZIONE NEW RELEASES */
+section#new-releases {
+    background-color: #1f1f1f;
 }
