@@ -152,3 +152,19 @@ section#ps-now button:hover {
 footer {
     background-color: #00439c;
 }
+
+.logo-ps-footer {
+    width: 100px;
+}
+
+div.sz-language img {
+    height: 20px;
+}
+
+div#copyright img {
+    height: 50px;
+}
+
+div#lists_group a:hover {
+    text-decoration: underline;
+}
