@@ -55,10 +55,36 @@ a {
     height: 25px;
 }
 
+/* ------------------- MENU' DROPDOWN FULL WIDTH -------------------- */
+li.dropdown {
+    position: initial;
+} 
+
+ul.dropdown-menu {
+    width: 100%;
+}
+
+li.sz-dd-item img {
+    opacity: 0.6;
+}
+
+li.sz-dd-item:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.sz-dd-item:hover h6{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------ */
+
+
 /* ANCHOR SEZIONE HERO */
 section#sz-hero {
     background-image: url('./../img/jumbo-bg.png');
     height: 70vh;
+    margin-top: 115px;
 }
 
 section#sz-hero,
