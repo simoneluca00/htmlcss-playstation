@@ -134,3 +134,21 @@ background-color: #bebcbb;
 section#ps-plus button:hover {
     box-shadow: inset 0 0 0 0.2rem #bebcbb;
 }
+
+/* ANCHOR SEZIONE PLAYSTATION NOW */
+section#ps-now {
+    background-image: url('./../img/avengers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+section#ps-now button:hover {
+    box-shadow: inset 0 0 0 0.2rem #232f5f;
+}
+
+/* ANCHOR FOOTER */
+
+footer {
+    background-color: #00439c;
+}
