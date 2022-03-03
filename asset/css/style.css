@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -38,15 +42,15 @@ a {
 }
 
 .nav-link {
-    border-bottom: 1px solid transparent;
-}
-
-.sz-active-link {
-    border-bottom: 1px solid #000;
+    border-radius: 10px;
 }
 
 .nav-link:hover {
     color: #0d6efd !important;
+}
+
+.nav-link:active {
+    background-color: rgba(105, 105, 105, 0.2);
 }
 
 .text_gray {
@@ -71,7 +75,7 @@ li.dropdown {
 ul.dropdown-menu {
     width: 100%;
     margin-top: -10px !important; 
-    border: none;
+    border: 0;
 }
 
 li.sz-dd-item img {
@@ -116,9 +120,6 @@ input.sz-search:focus-visible {
 .sz-nav-search  .i-search {
     filter: invert(1);
 }
-
-
-
 /* ------------------------------------------------------------------ */
 
 
