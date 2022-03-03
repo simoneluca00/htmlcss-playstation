@@ -200,10 +200,21 @@
                             <button type="button" class="btn btn-dark rounded-pill sz-btn-dark">Accedi</button>
                         </li>
 
-                        <li class="nav-item pe-3">
-                            <a class="nav-link d-none d-lg-block" href="#">
-                                <img src="./asset/img/lens.svg" alt="lente d'ingrandimento per effettuare una ricerca" id="i-search" >
+                        <li class="nav-item dropdown pe-3">
+                            <a class="nav-link d-none d-lg-block" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./asset/img/lens.svg" alt="lente d'ingrandimento per effettuare una ricerca" class="i-search" >
                             </a>
+
+                            <ul class="dropdown-menu sz-nav-search text-end p-4" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <input type="search" aria-label="Search" placeholder="Cerca su Playstation.com" class="sz-search fs-4 ps-2">
+                                    <button class="btn btn-primary rounded-0 px-4" type="submit">
+                                        <img src="./asset/img/lens.svg" alt="lente d'ingrandimento per effettuare una ricerca" class="i-search">
+                                    </button>
+                                </li>
+                            </ul>
+
                         </li>
 
                     </ul>
@@ -407,8 +418,8 @@
                         Non c'&egrave; mai stato un momento migliore per giocare sulla tua PS4.
                     </p>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 py-5 align-items-center">
-                    <div class="card col mb-4">
+                <div class="row row-cols-1 row-cols-md-3 pt-5 align-items-center">
+                    <div class="card col mb-5  mb-md-0">
                         <img src="./asset/img/ps4-slim-homepage-image-block.jpg" class="card-img-top" alt="PS4 img">
                         <div class="card-body">
                           <h3 class="card-title">PlayStation 4</h3>
@@ -416,7 +427,7 @@
                         <button type="button" class="btn btn-primary rounded-pill border-2">Scopri di pi&ugrave;</button>
                         </div>
                       </div>
-                      <div class="card col mb-4">
+                      <div class="card col mb-5 mb-md-0">
                         <img src="./asset/img/double11-202010-tw-psvr.jpg" class="card-img-top" alt="PS4 VR img">
                         <div class="card-body">
                           <h3 class="card-title">PlayStation VR</h3>
@@ -424,7 +435,7 @@
                           <button type="button" class="btn btn-primary rounded-pill border-2">Scopri di pi&ugrave;</button>
                         </div>
                       </div>
-                      <div class="card col mb-4">
+                      <div class="card col mb-5 mb-md-0">
                         <img src="./asset/img/dualshock-4-listing-thumb.jpg" class="card-img-top" alt="joystick PS4 img">
                         <div class="card-body">
                           <h3 class="card-title">Accessori</h3>
@@ -438,11 +449,11 @@
 
         <section id="ps-plus">
             <div class="container">
-                <div class="row">
-                    <div class="text-ps-plus col-12 col-md-6 py-4">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 py-5 py-md-0">
                         <img src="./asset/img/ps-plus-logo.png" alt="logo PS PLUS" class="col-7 col-md-12">
                         <p class="my-4">Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi mensili, sconti esclusivi e altro ancora.</p>
-                        <button type="button" class="btn btn-light text-primary rounded-pill border-3">Esplora PlayStation Plus</button>
+                        <button type="button" class="btn text-primary rounded-pill border-3">Esplora PlayStation Plus</button>
                     </div>
 
                     <img src="./asset/img/ps-plus-april-monthly-games-featured-image-block.png" alt="copertina giochi aprile ps plus" class="d-none d-md-block img-fluid col-md-6">
@@ -467,25 +478,45 @@
 
         <section id="ps-now" class="py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <img src="./asset/img/ps-now-logo-two-column.png" alt="PlayStation Now logo img" class="img-fluid">
-                        <p class="my-4 text-white">Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2 su PC Windows, con nuovi titoli aggiunti ogni mese.</p>
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6">
+                        <img src="./asset/img/ps-now-logo-two-column.png" alt="PlayStation Now logo img" class="img-fluid col-7 col-sm-9">
+                        <p class="my-4 my-xl-5 col-10 text-white">Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2 su PC Windows, con nuovi titoli aggiunti ogni mese.</p>
                         <button type="button" class="btn btn-light rounded-pill border-3 text-nowrap">Esplora PlayStation Now</button>
+                    </div>
+
+                    <div class="d-none d-sm-block col-sm-6">
+                        <img src="./asset/img/ps-now-april-featured-image-block.png" alt="PS Now april featured img" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="social-media" class="py-5">
-            <div class="container">
-                <h1 class=" text-center">Seguici sui social media</h1>
 
-                <div class="row row-cols-2 row-cols-sm-4 mt-5">
-                    <img src="./asset/img/twitter.jpg" alt="logo Twitter img" class="img-flui p-3">
-                    <img src="./asset/img/facebook.jpg" alt="logo Facebook img" class="img-flui p-3">
-                    <img src="./asset/img/instagram.jpg" alt="logo Instagram img" class="img-flui p-3">
-                    <img src="./asset/img/youtube.png" alt="logo Youtube img" class="img-flui p-3">
+            <h1 class=" text-center">Seguici sui social media</h1>
+
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <div class="row row-cols-2 row-cols-sm-4">
+                            <div class="col p-4 p-sm-2 ">
+                                <img src="./asset/img/twitter.jpg" alt="logo Twitter img" class="img-fluid">
+                            </div>
+
+                            <div class="col p-4 p-sm-2 ">
+                                <img src="./asset/img/facebook.jpg" alt="logo Facebook img" class="img-fluid">
+                            </div>
+
+                            <div class="col p-4 p-sm-2 ">
+                                <img src="./asset/img/instagram.jpg" alt="logo Instagram img" class="img-fluid">
+                            </div>
+
+                            <div class="col p-4 p-sm-2 ">
+                                <img src="./asset/img/youtube.png" alt="logo Youtube img" class="img-fluid"> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -503,7 +534,7 @@
                </div>
 
 
-               <div id="lists_group" class="d-flex flex-column flex-md-row col-lg-6 ps-5 mb-5">
+               <div id="lists_group" class="d-flex flex-column flex-md-row col-lg-6 my-5 my-lg-0">
                     <ul class="list-unstyled col-md-4">
                         <li class="p-2">
                           <a href="#" class="text-white">Link footer n</a>  

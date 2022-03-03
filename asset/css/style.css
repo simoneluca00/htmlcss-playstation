@@ -37,12 +37,16 @@ a {
     box-shadow: inset 0 0 0 0.1rem rgb(255, 255, 255);
 }
 
+.nav-link {
+    border-bottom: 1px solid transparent;
+}
+
 .sz-active-link {
     border-bottom: 1px solid #000;
 }
 
 .nav-link:hover {
-    font-size: 1.2em;
+    color: #0d6efd !important;
 }
 
 .text_gray {
@@ -55,7 +59,7 @@ a {
 }
 
 /* ANCHOR NAV */
-#i-search {
+.i-search {
     height: 25px;
 }
 
@@ -83,6 +87,31 @@ li.sz-dd-item:hover h6{
     text-decoration: underline;
     cursor: pointer;
 }
+
+ul.sz-nav-search {
+    background-color: #f8f9fa;
+}
+
+input.sz-search {
+    width: 25em;
+    height: 3em;
+}
+
+input.sz-search:focus-visible {
+    outline: 0;
+}
+
+.sz-nav-search  .btn-primary {
+    margin: 0 0 0.6em -0.4em;
+    height: 4.5em;
+}
+
+.sz-nav-search  .i-search {
+    filter: invert(1);
+}
+
+
+
 /* ------------------------------------------------------------------ */
 
 
@@ -113,6 +142,10 @@ div.img-new-rel img {
     border-radius: 10px;
 }
 
+div.img-games {
+    border: 1px solid transparent;
+}
+
 div.img-games:hover {
     border: 1px solid #0d6efd;
     cursor: pointer;
@@ -126,13 +159,14 @@ section#sz-console button {
 
 div.row.img-console > div:not(.sz-active-img) {
     opacity: .5;
+    border-bottom: 2px solid transparent;
 }
 
 div.row.img-console > div:hover {
     border-bottom: 2px solid #0d6efd;
     cursor: pointer;
     opacity: 1;
-    transform: translate(0px,-10px)
+    transform: scale(1.1);
 }
 
 /* ANCHOR SEZIONE HERO 2 */
@@ -150,13 +184,20 @@ section#new-releases {
     border: none;
 }
 
-.card:hover {
+.card:hover,
+section#ps-store img:hover,
+section#social-media img:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* ANCHOR SEZIONE PLAYSTATION PLUS */
 section#ps-plus {
 background-color: #bebcbb;
+}
+
+section#ps-plus button {
+    background-color: #d9dadc;
 }
 
 section#ps-plus button:hover {
@@ -165,14 +206,11 @@ section#ps-plus button:hover {
 
 /* ANCHOR SEZIONE PLAYSTATION NOW */
 section#ps-now {
-    background-image: url('./../img/avengers.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background-color: #161c3b;
 }
 
 section#ps-now button:hover {
-    box-shadow: inset 0 0 0 0.2rem #232f5f;
+    box-shadow: inset 0 0 0 0.2rem #161c3b;
 }
 
 /* ANCHOR FOOTER */
