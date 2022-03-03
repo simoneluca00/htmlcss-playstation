@@ -149,7 +149,7 @@ div.img-games {
 div.img-games:hover {
     border: 1px solid #0d6efd;
     cursor: pointer;
-    transform: translate(0px,-10px)
+    transform: translate(0px,-10px);
 }
 
 /* ANCHOR SEZIONE CONSOLE */
